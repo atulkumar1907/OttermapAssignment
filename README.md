@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+```markdown
+# Ottermap Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that integrates an interactive map using OpenLayers, allowing users to draw and edit polygons, and displaying the calculated area of each polygon.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* **Interactive Map:** Utilizes OpenLayers to display a map with OpenStreetMap tiles.
+* **Polygon Drawing:** Users can draw polygons on the map.
+* **Polygon Editing:** Users can modify existing polygons.
+* **Area Calculation:** The area of each drawn polygon is calculated and displayed.
+* **Polygon Deletion:** Users can delete all drawn polygons.
+* **Zoom Controls:** Map includes zoom in and zoom out controls at the bottom right.
+* **Responsive Design:** Uses React Bootstrap for a responsive layout.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React:** JavaScript library for building user interfaces.
+* **OpenLayers:** JavaScript library for displaying map data in web browsers.
+* **React Bootstrap:** UI library for responsive design.
+* **Git:** Version control system.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+1.  **Clone the repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone [https://github.com/your-username/OttermapAssignment.git](https://www.google.com/search?q=https://github.com/your-username/OttermapAssignment.git)
+    cd OttermapAssignment
+    ```
 
-### `npm run build`
+2.  **Install dependencies:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  **Start the development server:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+4.  **Open the application in your browser:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    * Navigate to `http://localhost:3000` in your web browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  **Draw Polygon:**
+    * Click the "Draw Polygon" button.
+    * Click on the map to create the vertices of the polygon.
+    * Double-click to finish drawing the polygon.
+2.  **Edit Polygon:**
+    * Click the "Edit Polygon" button.
+    * Click and drag the vertices to modify the polygon.
+3.  **Delete Polygons:**
+    * Click the "Delete Polygons" button to remove all drawn polygons.
+4.  **Zoom Controls:**
+    * Use the zoom in and zoom out buttons at the bottom right of the map to control the map's zoom level.
+5.  **Area Display:**
+    * The area of each polygon is displayed in a list below the map.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependencies
 
-## Learn More
+* `react`
+* `react-dom`
+* `react-router-dom`
+* `ol`
+* `react-openlayer`
+* `react-bootstrap`
+* `bootstrap`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* This application uses OpenLayers version [Specify your OpenLayers version here].
+* The application has been tested on modern browsers like Chrome, Firefox, and Edge.
+* The area is calculated in square meters.
+* The edit polygon feature updates the area of the polygon in real time.
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Atul Kumar
+* Github: https://github.com/atulkumar1907/
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [Specify your license, e.g., MIT] License.
+```
