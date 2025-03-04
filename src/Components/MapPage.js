@@ -7,11 +7,9 @@ import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import Draw from 'ol/interaction/Draw';
 import Modify from 'ol/interaction/Modify';
+import { Zoom, Rotate } from "ol/control";
 import VectorSource from 'ol/source/Vector';
 import VectorLayer from 'ol/layer/Vector';
-import Zoom from 'ol/control/Zoom';
-import Control from 'ol/control/Control.js'
-import Rotate from 'ol/control/Rotate'
 import { Style, Stroke, Fill } from 'ol/style';
 import { Polygon } from 'ol/geom';
 import { getArea } from 'ol/sphere';
@@ -57,7 +55,7 @@ function MapPage() {
         zoom: 2,
       }),
       // controls: [],
-    });
+    }, []);
     
     setMap(initialMap);
     vectorSource.current.on('changefeature', () => {
@@ -131,11 +129,15 @@ function MapPage() {
       <Container className='w-75 mb-5'>
         <Header>{firstName || 'Map'}</Header>
         <Container className='border rounded-5 overflow-hidden p-3'>
-        <div ref={mapRef} className='border mx-auto rounded-5 overflow-hidden'  style={{ width: '75%', height: '400px'}}></div>
-        <div className='mt-3 d-flex justify-content-center gap-5'>
-          <button className='btn-map border border-2 rounded-2 color-warning border-warning' onClick={handleDraw}>Draw Polygon</button>
-          <button className='btn-map border border-2 rounded-2 color-warning border-warning' onClick={handleEdit}>Edit Polygon</button>
-          <button className='btn-map border border-2 rounded-2 color-warning border-warning' onClick={handleDelete}>Delete Polygons</button>
+       
+        <div ref={mapRef} className='border mx-auto rounded-5 overflow-hidden'  style={{ width: '75%', height: '400px'}}>
+        
+        </div>
+       
+        <div className='mt-3 d-flex flex-column justify-content-center align-items-center gap-3 flex-md-row gap-md-5'>
+          <button className='btn-map border border-2 rounded-2 color-warning border-warning' onClick={handleDraw}>Draw </button>
+          <button className='btn-map border border-2 rounded-2 color-warning border-warning' onClick={handleEdit}>Edit </button>
+          <button className='btn-map border border-2 rounded-2 color-warning border-warning' onClick={handleDelete}>Delete </button>
         </div>
         <div>
           <h2>Polygons:</h2>

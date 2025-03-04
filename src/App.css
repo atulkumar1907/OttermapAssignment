@@ -21,7 +21,7 @@
 .btn-map{ 
   color: rgb(252, 203, 70);
   background-color: transparent;
-
+  width: 120px;
 }
 
 .btn-map:hover{
